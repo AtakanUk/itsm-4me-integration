@@ -1,0 +1,23 @@
+[
+  {"contains": "[test]", "skip": true},
+  {
+    "contains": "suspicious activity: high level issue detected",
+    "template": "your-template-id",
+    "service_instance_id": "your-service-instance-id",
+    "impact": "low",
+    "fields": ["qradar_id", "qradar_offense_url", "incident_name", "incident_analyst_description", "incident_triggered_rules"]
+  },
+  {
+    "contains": "credential leak",
+    "template": "your-template-id",
+    "service_instance_id": "your-service-instance-id",
+    "impact": "medium",
+    "fields": ["incident_id", "incident_name", "incident_analyst_description", "incident_discovered_time"]
+  },
+  {
+    "contains": "",
+    "template": "your-default-escalation-template-id",
+    "service_instance_id": "your-service-instance-id",
+    "impact": "low"
+  }
+]
